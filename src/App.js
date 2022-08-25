@@ -1,10 +1,15 @@
 import { useState, useLayoutEffect } from "react";
 import "./App.css";
 import ClickAwayListener from "react-click-away-listener";
+import Card from "./components/componentCard";
 import Logo from "./assets/logo.png";
 import Header from "./assets/header.png";
 import Pakmap from "./assets/pakmap.png";
 import Aboutimg from "./assets/aboutimg.png";
+import Component1 from "./assets/component1.png";
+import Component2 from "./assets/component2.png";
+import Component3 from "./assets/component3.png";
+import Component4 from "./assets/component4.png";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(true);
@@ -112,6 +117,39 @@ function App() {
         </div>
         <div className="about__section__img">
           <img src={Aboutimg} alt="aboutimg" />
+        </div>
+      </div>
+      <div className="components__section">
+        <div className="components__background">
+          <span className="components__border"></span>
+        </div>
+        <div className="components__section__info">
+          <div className="about__section__text__heading">
+            PROJECT COMPONENTS
+          </div>
+          <div className="components__section__cards">
+            <Card
+              img={Component1}
+              label="One dedicated tower for most 
+Luxurious Apartments "
+            />
+            <Card img={Component2} label="Industrial Mall" />
+            <Card img={Component3} label="One Five Star Hotel" />
+            <Card
+              img={Component4}
+              label="Dedicated corporate 
+and IT Centre"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="specification__section">
+        <div className="specification__section__info">
+          <div className="specification__section__left"></div>
+          <div className="specification__section__right">
+            PROJECT
+            <br /> SPECIFICATIONS
+          </div>
         </div>
       </div>
     </div>
