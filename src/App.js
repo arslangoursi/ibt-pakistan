@@ -8,6 +8,7 @@ import Logo from "./assets/logo.png";
 import Header from "./assets/header.png";
 import Pakmap from "./assets/pakmap.png";
 import Aboutimg from "./assets/aboutimg.png";
+import Location from "./assets/location.png";
 import Component1 from "./assets/component1.png";
 import Component2 from "./assets/component2.png";
 import Component3 from "./assets/component3.png";
@@ -748,6 +749,34 @@ and IT Centre"
               spn="1KM "
               label="from Margalla Avenue"
             />
+          </div>
+        </div>
+      </div>
+      <div className="loaction__features">
+        <img src={Location} alt="location" />
+        <div className="loaction__features__info">
+          <div className="about__section__text__heading head">
+            LOCATION FEATURES
+          </div>
+          <div className="loaction__features__info__subheading">
+            Most futuristic location of Islamabad. Very easy access from all
+            over Pakistan.
+            <br /> Ideal location for International trade. Most suitable
+            location for nearest warehouses. Very near to airport for foreigner
+            visitors approach. In next 10 years IBT location will b the{" "}
+            <span>centre of Capital</span> Islamabad.
+          </div>
+        </div>
+      </div>
+      <div className="contact__us">
+        <div className="contact__us__info">
+          <div className="contact__us__text">
+            IBT is an industrial Mall , It will cater needs of all construction
+            industry, Home furnitures and accessories and auto mobile industry
+            Pakistan needs industrial mall for its economic growth.
+          </div>
+          <div className="contact__us__btn">
+            <button>Contact Us</button>
           </div>
         </div>
       </div>

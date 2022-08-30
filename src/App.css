@@ -415,6 +415,82 @@ body {
 .Location__distance__section__info__card__info span {
   font-weight: bold;
 }
+.loaction__features {
+  margin-top: 30em;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  border-radius: 0 150px 0 0;
+}
+.loaction__features img {
+  margin-top: 1em;
+  width: 100%;
+  height: 600px;
+  z-index: -999;
+}
+.loaction__features__info {
+  max-width: var(--maxwidth1);
+  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+.loaction__features__info__subheading {
+  color: #ebebeb;
+  width: 70%;
+  font-size: 20px;
+  margin-top: 1em;
+}
+.loaction__features__info__subheading span {
+  font-weight: bold;
+}
+.head {
+  color: #ffffff;
+  margin-top: 3.3em;
+}
+.contact__us {
+  background-color: #bc993d;
+  border-radius: 0 0 100px 0;
+  width: 90%;
+  margin-right: 30%;
+  height: fit-content;
+  margin-bottom: 1em;
+}
+.contact__us__info {
+  max-width: var(--maxwidth3);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__us__text {
+  font-size: 18px;
+  width: 75%;
+  padding: 2.5em 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+.contact__us__btn {
+  display: flex;
+}
+.contact__us__btn button {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 1em 3em;
+  background-color: #bc993d;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.contact__us__btn button:hover {
+  background-color: #ffffff;
+  color: #bc993d;
+}
 /*-----------------------------------------------------------------------------------------*/
 
 @media (max-width: 1660px) {
@@ -455,6 +531,12 @@ body {
   }
   .Location__distance__section__info {
     max-width: var(--maxwidth2);
+  }
+  .loaction__features__info {
+    max-width: var(--maxwidth2);
+  }
+  .contact__us__info {
+    max-width: var(--maxwidth4);
   }
 }
 @media (max-width: 1440px) {
@@ -501,6 +583,12 @@ body {
   }
   .Location__distance__section__info {
     max-width: var(--maxwidth3);
+  }
+  .loaction__features__info {
+    max-width: var(--maxwidth3);
+  }
+  .contact__us__info {
+    max-width: var(--maxwidth5);
   }
 }
 @media (max-width: 1360px) {
@@ -565,6 +653,12 @@ body {
   .Location__distance__section__info {
     max-width: var(--maxwidth4);
   }
+  .loaction__features__info {
+    max-width: var(--maxwidth4);
+  }
+  .contact__us__info {
+    max-width: var(--maxwidth6);
+  }
 }
 @media (max-width: 1180px) {
   .header__navbar__center {
@@ -620,6 +714,12 @@ body {
   .Location__distance__section__info__card__icon {
     padding: 2em 1em;
   }
+  .loaction__features__info {
+    max-width: var(--maxwidth5);
+  }
+  .loaction__features__info__subheading {
+    width: 90%;
+  }
 }
 @media (max-width: 1050px) {
   .header__navbar__center {
@@ -645,6 +745,15 @@ body {
   }
   .Location__distance__section__info {
     max-width: var(--maxwidth6);
+  }
+  .loaction__features__info {
+    max-width: var(--maxwidth6);
+  }
+  .contact__us__info {
+    flex-direction: column;
+  }
+  .contact__us__btn {
+    margin-bottom: 1em;
   }
 }
 @media (max-width: 1000px) {
@@ -734,6 +843,12 @@ body {
   .Location__distance__section__info__card {
     width: 90%;
   }
+  .loaction__features {
+    margin-top: 55em;
+  }
+  .loaction__features__info {
+    padding: 1em;
+  }
 }
 @media (max-width: 840px) {
   .specification__section__left {
@@ -749,6 +864,9 @@ body {
   .features__section__left__subheading {
     padding: 0.8em 2em;
   }
+  .loaction__features img {
+    margin-top: 2em;
+  }
 }
 @media (max-width: 650px) {
   .about__section {
@@ -761,6 +879,9 @@ body {
   .about__section__text__heading::before {
     width: 30%;
     height: 2%;
+  }
+  .head::before {
+    height: 6%;
   }
   .about__section__text__subtext {
     font-size: 14px;
@@ -815,12 +936,21 @@ body {
   }
 }
 @media (max-width: 482px) {
+  .loaction__features img {
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 482px) {
   .features__section__left {
     border: none;
     height: 190px;
   }
   .features__section__left__heading {
     margin-top: -600px;
+  }
+  .head::before {
+    height: 5%;
   }
 }
 @media (max-width: 450px) {
